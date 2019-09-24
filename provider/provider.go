@@ -13,6 +13,7 @@ func KeycloakProvider() *schema.Provider {
 			"keycloak_realm":                              dataSourceKeycloakRealm(),
 			"keycloak_realm_keys":                         dataSourceKeycloakRealmKeys(),
 			"keycloak_role":                               dataSourceKeycloakRole(),
+			"keycloak_user":                               dataSourceKeycloakUser(),
 		},
 		ResourcesMap: map[string]*schema.Resource{
 			"keycloak_realm":                                           resourceKeycloakRealm(),
