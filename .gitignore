@@ -29,3 +29,7 @@ site/
 *.zip
 
 .DS_Store
+custom-user-federation-example/.settings
+custom-user-federation-example/bin
+custom-user-federation-example/.classpath
+custom-user-federation-example/.project

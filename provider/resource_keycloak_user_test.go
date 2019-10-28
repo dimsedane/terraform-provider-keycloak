@@ -2,10 +2,6 @@ package provider
 
 import (
 	"fmt"
-	"github.com/hashicorp/terraform/helper/acctest"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/terraform"
-	"github.com/mrparkers/terraform-provider-keycloak/keycloak"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -13,6 +9,11 @@ import (
 	"regexp"
 	"strings"
 	"testing"
+
+	"github.com/hashicorp/terraform/helper/acctest"
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/terraform"
+	"github.com/mrparkers/terraform-provider-keycloak/keycloak"
 )
 
 func TestAccKeycloakUser_basic(t *testing.T) {
